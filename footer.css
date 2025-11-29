@@ -1,0 +1,30 @@
+.footer {
+    background: var(--color-blue-600);
+    padding-block: 24px;
+    display: flex;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 0;
+    padding-block: 16px;    
+}
+
+@media (width >= 50.625em) {
+    .footer {
+        padding-block: 24px;
+        display: flex;
+        /* max-width: fit-content; */
+    }
+}
+
+/* @media (width >= 75em) {
+    .wrapper {
+        max-width: 70em;
+        margin-inline: auto;
+        display: flex;
+        /* padding-inline: 0; 
+    }
+} */

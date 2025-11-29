@@ -1,0 +1,65 @@
+:root {
+    --color-blue-900: hsl(210, 100%, 20%);
+    --color-blue-600: hsl(234, 25%, 53%);
+    --color-purple-600: hsl(309, 78%, 40%);
+    --color-grey: hsl(207, 4%, 52%);
+    --color-black-300: hsl(213, 15%, 12%);
+    --color-white: hsl(0, 0%, 100%);
+    --gradient-pink: linear-gradient(hsl(343, 92%, 55%), hsl(341, 94%, 74%));
+    --gradient-purple: linear-gradient(hsl(280, 83%, 30%), hsl(280, 99%, 28%));
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+main {
+    overflow-x: hidden;
+}
+body {
+    font-family:'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--color-grey);
+    line-height: 1.45;
+    max-width: 35ch;
+}
+
+img.logo {
+    transition: opacity 200ms ease-in-out;
+}
+
+.logo:hover {
+    opacity: 0.75;
+}
+
+@media (width >= 75em) {
+    .logo {
+        width: 6.955625rem;
+    }
+}
+
+.logo {
+    width: 4.955625rem;
+    transition: opacity 200ms ease-in-out;
+}

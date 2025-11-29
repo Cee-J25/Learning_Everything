@@ -1,0 +1,86 @@
+.course {
+    background: linear-gradient(#fff, #f0f1ff);
+    padding-block: 64px 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.courses .block.title {
+    background: var(--gradient-pink);
+    color: var(--color-white);
+    padding: 32px;
+    position: relative;
+    border-radius: 18px;
+}
+
+.courses h2 {
+    font-size: var(--fs-3);
+}
+
+.courses .block {
+    padding: 64px 32px 40px; 
+    position: relative;
+    border-radius: 15px;   
+}
+.courses .course {
+    background: var(--color-white);
+    gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.courses img {
+    top: 0;
+    position: relative;
+    /* translate: 32px -50%; */
+    /* position: ;   */
+    
+}
+
+.courses h3 {
+    font-size: var(--fs-4);
+
+    /* position: relative; */
+}
+
+.courses p {
+    font-size: var(--fs-5);
+    margin: 0;
+    vertical-align: top;
+}
+
+.course a {
+    font-size: var(--fs-7);
+    font-weight: 700;
+    color: var(--color-purple-600);
+    transition: opacity 200ms ease-in-out;
+    align-self: end;
+}
+
+.courses a:hover {
+    opacity: 0.5;
+}
+
+@media (width >= 50.625em) {
+    .courses .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;;
+    }
+
+    .courses .block.title{
+        padding-block-start: 64px;
+    }
+}
+
+@media (width >= 75em) {
+    .courses .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 84px 32px;
+    }
+}
